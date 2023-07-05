@@ -132,6 +132,41 @@ ul.login-bar>li:hover {
 }
 
 
+/********** section **********/
+
+.wrap_title p {
+    font-size: 36px;
+    margin-top: 55x;
+    margin-left: 124px;
+}
+
+.wrap_select_country {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: 1513px;
+    height: 150px;
+    gap: 80px;
+}
+
+.wrap_select_country section {
+    width: 368px;
+    height: 150px;
+}
+
+.select_country1 {
+    background-color: #B3B3B3;
+}
+
+.select_country2 {
+    background-color: aqua;
+}
+
+.select_country3 {
+    background-color: pink;
+}
+
+
 /********** footer **********/
 
 footer {

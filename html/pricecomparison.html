@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/fe66068d41.js" crossorigin="anonymous"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="/pricecomparison/pricecomparison.css">
+    <link rel="stylesheet" href="/css/pricecomparison.css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +18,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <style>
-        a:link,
-        a:visited {
+        a:link:not(.a-price),
+        a:visited:not(.a-price) {
             color: black;
+        }
+        
+        .a-price {
+            color: #0029BA;
+            padding-bottom: 10px;
+            border-bottom: solid 5px #0029BA;
         }
     </style>
 </head>
@@ -56,9 +62,31 @@
         </div>
     </nav>
 
+    <section>
+        <div class="wrap_title">
+            <p>가격 비교</p>
+        </div>
+        <div class="wrap_select_country">
+            <section class="select_country1">
+
+            </section>
+            <section class="select_country2">
+
+            </section>
+            <section class="select_country3">
+
+            </section>
+        </div>
+    </section>
+
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+
     <footer>
         <p>&copy; 2023 LIKELION 3팀. ALL rights reserved.</p>
     </footer>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/js/pricecomparison.js"></script>
 </body>
 
 </html>
