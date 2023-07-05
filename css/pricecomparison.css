@@ -134,11 +134,17 @@ ul.login-bar>li:hover {
 
 /********** section **********/
 
+
+/* title */
+
 .wrap_title p {
     font-size: 36px;
     margin-top: 55x;
     margin-left: 124px;
 }
+
+
+/* select country */
 
 .wrap_select_country {
     display: flex;
@@ -164,6 +170,32 @@ ul.login-bar>li:hover {
 
 .select_country3 {
     background-color: pink;
+}
+
+
+/* chart */
+
+.wrap_chart {
+    background-color: #D2D2D2;
+    margin-top: 87px;
+    margin-left: 132px;
+    width: 1249px;
+    height: 867px;
+}
+
+
+/* comparison */
+
+.wrap_comparison {
+    width: 559px;
+    height: 62px;
+    margin-top: 122px;
+    margin-left: 494px;
+    margin-bottom: 328px;
+}
+
+.wrap_comparison p {
+    font-size: 28px;
 }
 
 
