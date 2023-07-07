@@ -23,6 +23,20 @@ a:visited {
     text-decoration: none;
 }
 
+.menu a:link,
+.menu a:visited {
+    color: black;
+}
+
+.interestConutry_modify a:link,
+.review_modify a:link,
+.clipping_modify a:link,
+.interestConutry_modify a:visited,
+.review_modify a:visited,
+.clipping_modify a:visited {
+    color: #444444;
+}
+
 
 /* logo */
 
