@@ -132,6 +132,62 @@ ul.login-bar>li:hover {
 }
 
 
+/********** section **********/
+
+.wrap_content {
+    width: 1513px;
+    margin: 0 auto;
+}
+
+.wrap_memberInfor {
+    width: 987px;
+    height: 267px;
+    background-color: #B3B3B3;
+    margin: 0 auto;
+    margin-top: 78px;
+}
+
+.wrap_interestConutry {
+    width: 987px;
+    height: 100%;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.interestConutry {
+    width: 987px;
+    height: 150px;
+}
+
+.wrap_review {
+    width: 987px;
+    height: 100%;
+    background-color: aquamarine;
+    margin: 0 auto;
+    margin-top: 116px;
+}
+
+.review {
+    width: 987px;
+    height: 250px;
+}
+
+.wrap_clipping {
+    width: 987px;
+    height: 100%;
+    background-color: darksalmon;
+    margin: 0 auto;
+    margin-top: 116px;
+    margin-bottom: 244px;
+}
+
+.wrap_clipping {
+    width: 987px;
+    height: 300px;
+}
+
+
 /********** footer **********/
 
 footer {
