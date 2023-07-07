@@ -149,27 +149,64 @@ ul.login-bar>li:hover {
 .wrap_select_country {
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
     width: 1513px;
-    height: 150px;
+    height: 214px;
     gap: 80px;
 }
 
 .wrap_select_country section {
     width: 368px;
-    height: 150px;
+    height: 214px;
 }
 
-.select_country1 {
-    background-color: #B3B3B3;
+.circle {
+    width: 30px;
+    height: 30px;
+    margin-left: 9px;
+    border-radius: 50%;
 }
 
-.select_country2 {
-    background-color: aqua;
+.county_name {
+    width: 368px;
+    height: 52px;
+    display: flex;
 }
 
-.select_country3 {
-    background-color: pink;
+.county_name p {
+    font-size: 30px;
+    margin: 0;
+    margin-left: 24px;
+}
+
+.select_area {
+    width: 368px;
+    height: 164px;
+}
+
+#country1 {
+    width: 368px;
+    height: 66px;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: #F5F5F5;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.10);
+}
+
+#area1 {
+    width: 368px;
+    height: 66px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 30px;
+    background-color: #F5F5F5;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.10);
+}
+
+#country1,
+#area1:focus {
+    outline: none;
 }
 
 
@@ -177,7 +214,7 @@ ul.login-bar>li:hover {
 
 .wrap_chart {
     background-color: #D2D2D2;
-    margin-top: 87px;
+    margin-top: 151px;
     margin-left: 132px;
     width: 1249px;
     height: 867px;
@@ -189,7 +226,7 @@ ul.login-bar>li:hover {
 .wrap_comparison {
     width: 559px;
     height: 62px;
-    margin-top: 122px;
+    margin-top: 186px;
     margin-left: 494px;
     margin-bottom: 328px;
 }
