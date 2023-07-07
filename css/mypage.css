@@ -316,6 +316,7 @@ ul.login-bar>li:hover {
 /********** footer **********/
 
 footer {
+    position: relative;
     width: 1513px;
     height: 163px;
     background-color: #393939;
@@ -324,7 +325,21 @@ footer {
 }
 
 footer p {
-    text-align: center;
-    margin-top: 70px;
+    margin: 0px;
     color: white;
+}
+
+.wrap_company {
+    position: absolute;
+    width: 200px;
+    height: 79px;
+    margin-left: 57px;
+    margin-top: 21px;
+}
+
+.wrap_contact {
+    width: 300px;
+    height: 102px;
+    margin-left: 328px;
+    margin-top: 21px;
 }
