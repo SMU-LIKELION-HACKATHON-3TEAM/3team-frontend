@@ -62,7 +62,7 @@
         </div>
     </nav>
 
-    <section>
+    <section class="wrap_content">
         <div class="wrap_title">
             <p>가격 비교</p>
         </div>
@@ -112,7 +112,9 @@
         </div>
 
         <div class="wrap_chart">
-            <div class="chart" id="columnchart_material" style="width: 800px; height: 500px;"></div>
+            <div class="chart">
+                <canvas id="chart"></canvas>
+            </div>
         </div>
 
         <div class="wrap_comparison">
@@ -126,8 +128,10 @@
         <p>&copy; 2023 LIKELION 3팀. ALL rights reserved.</p>
     </footer>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="/js/pricecomparison.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 </body>
 
 </html>

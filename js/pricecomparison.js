@@ -1,16 +1,44 @@
-google.charts.load('current', { 'packages': ['bar'] });
-google.charts.setOnLoadCallback(drawChart);
+var barChartData = {
+    labels: ["한끼 평균 식사비", "1km당 평균 택시비", "한 잔 평균 커피값", "각종 먹거리"],
+    datasets: [{
+            label: '나라1',
+            backgroundColor: "#F87DC0",
+            data: [
+                Math.random() * 90000,
+                Math.random() * 90000,
+                Math.random() * 90000,
+                Math.random() * 90000
 
-function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales', 'Expenses', 'Profit'],
-        ['2014', 1000, 400, 200],
-        ['2015', 1170, 460, 250],
-        ['2016', 660, 1120, 300],
-        ['2017', 1030, 540, 350]
-    ]);
+            ]
+        }, {
+            label: '나라2',
+            backgroundColor: "#83A07F",
+            data: [
+                Math.random() * 90000,
+                Math.random() * 90000,
+                Math.random() * 90000,
+                Math.random() * 90000
 
-    var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+            ]
+        }, {
+            label: '나라3',
+            backgroundColor: "#F5D8A0",
+            data: [
+                Math.random() * 90000,
+                Math.random() * 90000,
+                Math.random() * 90000,
+                Math.random() * 90000
 
-    chart.draw(data);
+            ]
+        }
+
+    ]
+};
+window.onload = function() {
+    var ctx = $('#chart').get(0).getContext("2d");
+    window.theChart = new Chart(ctx, {
+        type: 'bar',
+        data: barChartData,
+        options: {}
+    });
 }

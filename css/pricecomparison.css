@@ -134,6 +134,11 @@ ul.login-bar>li:hover {
 
 /********** section **********/
 
+.wrap_content {
+    width: 1513px;
+    margin: 0 auto;
+}
+
 
 /* title */
 
@@ -152,6 +157,7 @@ ul.login-bar>li:hover {
     width: 1513px;
     height: 214px;
     gap: 80px;
+    margin-top: 61px;
 }
 
 .wrap_select_country section {
@@ -213,11 +219,19 @@ ul.login-bar>li:hover {
 /* chart */
 
 .wrap_chart {
-    background-color: #D2D2D2;
-    margin-top: 151px;
+    background-color: #F5F5F5;
+    margin-top: 87px;
     margin-left: 132px;
     width: 1249px;
     height: 867px;
+    border: solid 1px #D2D2D2;
+    border-radius: 10px;
+}
+
+.chart {
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 318px;
 }
 
 
@@ -226,13 +240,15 @@ ul.login-bar>li:hover {
 .wrap_comparison {
     width: 559px;
     height: 62px;
+    margin: 0 auto;
     margin-top: 186px;
-    margin-left: 494px;
     margin-bottom: 328px;
+    border-bottom: 1px solid black;
 }
 
 .wrap_comparison p {
     font-size: 28px;
+    text-align: center;
 }
 
 
