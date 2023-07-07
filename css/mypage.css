@@ -139,13 +139,57 @@ ul.login-bar>li:hover {
     margin: 0 auto;
 }
 
+
+/* member information */
+
 .wrap_memberInfor {
     width: 987px;
     height: 267px;
-    background-color: #B3B3B3;
+    background-color: gainsboro;
     margin: 0 auto;
     margin-top: 78px;
+    border-bottom: solid 0.5px #A8A8A8;
+    position: relative;
+    overflow: hidden;
 }
+
+.profile {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 23px;
+    border-radius: 10px;
+}
+
+.wrap_infor {
+    position: absolute;
+    margin-top: 12px;
+}
+
+.wrap_infor p {
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 154px;
+    margin-bottom: 11.5px;
+}
+
+.infor_modify {
+    position: absolute;
+    margin-top: 196px;
+    margin-left: 858px;
+    width: 104px;
+    height: 33px;
+    background-color: #0029BA;
+    border: none;
+    border-radius: 10px;
+}
+
+.infor_modify a {
+    color: white;
+}
+
+
+/* interset country */
 
 .wrap_interestConutry {
     width: 940px;
@@ -155,10 +199,38 @@ ul.login-bar>li:hover {
     margin-top: 32px;
 }
 
+.wrap_interestConutry p {
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 26px;
+}
+
 .interestConutry {
+    background-color: lightpink;
     width: 940px;
     height: 150px;
 }
+
+.interestConutry_modify {
+    margin-top: 30px;
+    width: 940px;
+    height: 22px;
+}
+
+.interestConutry_modify button {
+    padding: 0px;
+    margin-left: 839.5px;
+    border: none;
+    background-color: white;
+    border-bottom: solid 0.5px #444444;
+}
+
+.interestConutry_modify a {
+    font-size: 16px;
+}
+
+
+/* review */
 
 .wrap_review {
     width: 940px;
@@ -168,10 +240,38 @@ ul.login-bar>li:hover {
     margin-top: 116px;
 }
 
+.wrap_review p {
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 26px;
+}
+
 .review {
+    background-color: lightsteelblue;
     width: 940px;
     height: 250px;
 }
+
+.review_modify {
+    margin-top: 41px;
+    width: 940px;
+    height: 22px;
+}
+
+.review_modify button {
+    padding: 0px;
+    margin-left: 892px;
+    border: none;
+    background-color: white;
+    border-bottom: solid 0.5px #444444;
+}
+
+.review_modify a {
+    font-size: 16px;
+}
+
+
+/* clipping */
 
 .wrap_clipping {
     width: 940px;
@@ -182,9 +282,34 @@ ul.login-bar>li:hover {
     margin-bottom: 244px;
 }
 
-.wrap_clipping {
+.wrap_clipping p {
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 54px;
+}
+
+.clipping {
+    background-color: olive;
     width: 940px;
     height: 300px;
+}
+
+.clipping_modify {
+    margin-top: 54px;
+    width: 940px;
+    height: 22px;
+}
+
+.clipping_modify button {
+    padding: 0px;
+    margin-left: 892px;
+    border: none;
+    background-color: white;
+    border-bottom: solid 0.5px #444444;
+}
+
+.clipping_modify a {
+    font-size: 16px;
 }
 
 
