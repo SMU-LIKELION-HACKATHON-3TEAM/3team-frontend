@@ -1,14 +1,110 @@
 * {
-    box-sizing: border-box;
-}
-
-body {
     font-family: 'Inter', sans-serif;
 }
 
+.wrap-map {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-/********** nav **********/
+.map {
+   width: 989px;
+   height: 589px;
+   margin-left: 50px;
+}
 
+.map-sub {
+    background-color: rgb(245, 245, 245);
+    width: 348px;
+    height: 409px;
+    margin: 20px;
+    border-radius: 5%;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.map-text {
+    padding: 10px;
+}
+
+.button-map {
+    background-color: rgb(230, 230, 230);
+    border: none;
+    width: 270px;
+    height: 42px;
+    font-size: 20px;
+    border-radius: 5%;
+}
+
+.button {
+    text-align: center;
+    padding-top: 170px;
+}
+
+.wrap-infotorate {
+    margin: 20px 20px 20px 50px;
+    display: flex;
+}
+
+.wrap-myinfo {
+    width: 400px;
+}
+
+.container-myinfo {
+    font-size: 15px;
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+.button-my {
+    background-color: rgb(0, 41, 186);
+    color: white;
+    border-radius: 5%;
+    border: none;
+    width: 105px;
+    height: 33px;
+}
+
+.nation {
+    margin:20px;
+    display: flex;
+    align-items: center;
+}
+
+.nation-img {
+    padding-right: 20px;
+}
+
+.my-img {
+    padding-right: 30px;
+}
+
+/* 핫 게시물 */
+.wrap-hot {
+    margin: 20px;
+    border-left: thick solid #393939;
+    width: 650px;
+}
+
+.hot {
+    margin: 20px;
+}
+
+/* 오늘 환율 */
+
+.wrap-monrate {
+    margin:20px;
+    border-left: thick solid #393939;
+}
+
+.monrate {
+    margin:20px;
+}
+
+/* nav */
 nav {
     position: relative;
     width: 1513px;
@@ -130,75 +226,11 @@ ul.login-bar>li:hover {
     margin-top: 14px;
     cursor: pointer;
 }
-/********** main **********/
-main{
-    position: relative;
-    width: 1513px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.wrap_er{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width:1306px;
-    height:619px;
-    background-color: #f7f7f7;
-    margin:72px;
-    border-radius: 10px;
-}
-.main_er{
-    display:flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-select{
-    width:309px;
-    height:75px;
-    border-radius:10px;
-    background-color: #ebebeb;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    border:none;
-    font-size: 28px;
-    font-style: bold;
-    margin-right: 29px;
-    margin-left: 58px;
-}
-.main_er > p{
-    font-size: 70px;
-}
-.money1>p, .money2>p{
-    font-size: 41px;
-    display:table;
-}
-.main_er input{
-    width: 220px;
-    height:132px;
-    border:none;
-    font-size: 43px;
-    margin-left:30px;
-    background-color: #ebebeb;
-}
-.money1, .money2{
-    display: flex;
-    width: 300px;
-    height:132px;
-    border-radius:10px;
-    background-color: #ebebeb;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    border:none;
-    font-size: 28px;
-    margin-right: 30px;
-    margin-left:30px;
-    justify-items: right;
-}
+
 
 /********** footer **********/
 
 footer {
-    position: relative;
     width: 1513px;
     height: 163px;
     background-color: #393939;
@@ -207,21 +239,8 @@ footer {
 }
 
 footer p {
-    margin: 0px;
+    text-align: center;
+    margin-top: 70px;
     color: white;
 }
 
-.wrap_company {
-    position: absolute;
-    width: 200px;
-    height: 79px;
-    margin-left: 57px;
-    margin-top: 21px;
-}
-
-.wrap_contact {
-    width: 300px;
-    height: 102px;
-    margin-left: 328px;
-    margin-top: 21px;
-}

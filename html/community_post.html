@@ -64,12 +64,12 @@
         <div id="wrap_newPost_main">
             <input id="wrap_newPost_head" type="text" placeholder="제목"></input>
             <div id="wrap_newPost_line"></div>
-            <div id="wrap_newPost_file">파일 첨부</div>
-            <input id="wrap_newPost_content" type="text"  placeholder="이 곳에 글을 작성해주세요. (최소 20글자 이상 입력)"></input>
-            <div id="wrap_newPost_save">작성완료</div>
-
-        </div>
-
+            <input type="file" id="wrap_newPost_file" accept="image/*" required multiple>
+            <div class="upload">파일첨부</div>
+            
+            <textarea id="wrap_newPost_content"  placeholder="이 곳에 글을 작성해주세요. (최소 20글자 이상 입력)"></textarea>
+            <ul class="image-preview"></ul>
+            <a href="http://127.0.0.1:5500/html/community.html" id="wrap_newPost_save">작성완료</a>
         
     </div>
     
@@ -80,5 +80,6 @@
         <p>&copy; 2023 LIKELION 3팀. ALL rights reserved.</p>
     </footer>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/community_newPost.js"></script>
 </html>
