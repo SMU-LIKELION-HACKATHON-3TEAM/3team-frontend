@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.hidden{
+    display:none;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -88,8 +92,9 @@ ul.login-bar>li {
 
 ul.login-bar>li:hover {
     border: solid 1px #F9F9F9F9;
-    border-radius: 5px;
+    border-radius: 1px;
     box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    
 }
 
 
@@ -135,35 +140,64 @@ ul.login-bar>li:hover {
 /********** footer **********/
 
 footer {
+    position: relative;
     width: 1513px;
     height: 163px;
     background-color: #393939;
     margin: 0 auto;
     overflow: hidden;
+    bottom: 0;
 }
 
 footer p {
-    text-align: center;
-    margin-top: 70px;
+    margin: 0px;
     color: white;
+}
+
+.wrap_company {
+    position: absolute;
+    width: 200px;
+    height: 79px;
+    margin-left: 57px;
+    margin-top: 21px;
+}
+
+.wrap_contact {
+    width: 300px;
+    height: 102px;
+    margin-left: 328px;
+    margin-top: 21px;
 }
 
 
 
 /* community */
 
+#wrap_community_up{
+    width: 1513px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
 #wrap_community{
-    background-color: skyblue;
     margin: 0 auto;
     width:900px;
-    height:1000px;
-    overflow: hidden;
+    min-height: 1000px;
+    height: 100%;
+}
+
+#wrap_community_box{
+    width:900px;
+    min-height:500px;
+    padding-bottom:100px;
+    height: 100%;
 }
 
 #wrap_search_country{
     position: relative;
     width:250px;
     margin:20px;
+    margin-top:35px;
     padding:10px;
     border-radius: 10px;
     border-color: #0029BA;
@@ -183,8 +217,7 @@ footer p {
 #wrap_newPost_country{
     position: relative;
     width:250px;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:20px;
     padding:10px;
     border-radius: 10px;
     border-color: #0029BA;
@@ -210,6 +243,7 @@ footer p {
     overflow: hidden;
     border: none;
 }
+
 #wrap_newPost_line{
     margin: 0 auto;
     width:900px;
@@ -220,6 +254,10 @@ footer p {
 }
 
 #wrap_newPost_file{
+    display: none;
+}
+
+.upload{
     margin-bottom:-10px;
     font-size: 10px;
     width:60px;
@@ -231,18 +269,13 @@ footer p {
 
 #wrap_newPost_content{
     position:relative;
+    font-size:13px;
     margin-left: 10px;
     width:880px;
     height:550px;
     border: none;
-}
-
-#wrap_newPost_content::placeholder{
-    text-align:left;
+    resize:none;
     
-    font-size:13px;
-    padding:0;
-    margin:0;
 }
 
 #wrap_newPost_save{
@@ -258,3 +291,142 @@ footer p {
     margin-right:10px;
     cursor:pointer;
 }
+
+i.fas.fa-pen {
+    width:40px;
+    height:40px;
+    background-color: blue;
+    color: white;
+    padding:0;
+    text-align: center;
+    padding-top:10px;
+    font-size: 23px;
+    border-radius: 50%;
+    float:right;
+    cursor: pointer;
+    margin-top:40px;
+  }
+
+
+
+
+.postIcon{
+    display:flex;
+    background-color: pink;
+    border-radius: 10px;
+    margin-top:50px;
+    width:50px;
+    height:50px;
+}
+.time{
+    color:#B3B3B3;
+    float:right;
+    margin-top:-30px;
+}
+.postId {
+    margin-left:70px;
+    margin-top :-30px;
+    margin-bottom:40px;
+    font-size: 20px;
+  }
+  
+
+  .postContent {
+    width:90%;
+    height:80px;
+    margin-bottom:20px;
+    border: none;
+    resize:none;
+  }
+  
+  .file1 {
+    text-align: center;
+    height: 250px;
+    background-color: #f4f4f4;
+    width:49%;
+    height:250px;
+  }
+
+  .file2 {
+    text-align: center;
+    height: 250px;
+    background-color: #f4f4f4;
+    width:49%;
+    margin-left:51%;
+    margin-top:-250px;
+    height:250px;
+  }
+  
+  .file_only{
+    text-align: center;
+    height: 250px;
+    background-color: #f4f4f4;
+    width:100%;
+    height:300px;
+    
+  }
+  .likes{
+    color:#B3B3B3;
+    margin-top:10px;
+    margin-left:10px;
+    cursor: pointer;
+  }
+  
+  .comment{
+    color:#B3B3B3;
+    margin-top:-21px;
+    margin-left:75px;
+    cursor: pointer;
+    
+  }
+  
+  .scrap{
+    color:#B3B3B3;
+    margin-top:-22px;
+    margin-left:125px;
+    cursor: pointer;
+  }
+  .share{
+    color:#B3B3B3;
+    margin-top:-21.5px;
+    margin-left:190px;
+    cursor: pointer;
+  }
+
+  .report {
+    text-align: right;
+    color: red;
+    font-size:14px;
+    margin-top:-22px;
+    margin-right:20px;
+    cursor: pointer;
+  }
+
+  .a-community{
+    font-weight: bolder;
+  }
+
+  ul.menu > li > .a-community {
+    color: blue;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  #post_img {
+    width: auto;
+    height: 200px;
+  }
+
+  .image-preview {
+    width: 1300px;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .comment_click{
+    width:50px;
+    height:50px;
+  }
