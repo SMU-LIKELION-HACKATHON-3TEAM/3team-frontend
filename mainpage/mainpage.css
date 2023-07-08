@@ -85,7 +85,7 @@
 /* 핫 게시물 */
 .wrap-hot {
     margin: 20px;
-    border-left: thick solid #393939;
+    border-left: solid #393939;
     width: 650px;
 }
 
@@ -97,7 +97,7 @@
 
 .wrap-monrate {
     margin:20px;
-    border-left: thick solid #393939;
+    border-left: solid #393939;
 }
 
 .monrate {
