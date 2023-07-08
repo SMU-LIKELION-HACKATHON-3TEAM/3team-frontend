@@ -146,6 +146,83 @@ ul.login-bar>li:hover {
 }
 
 
+/********** section **********/
+
+.wrap_content {
+    width: 1513px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrap_img {
+    margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 82px;
+    width: 940px;
+    height: 303px;
+}
+
+.wrap_img img {
+    width: 940px;
+    height: 303px;
+}
+
+.wrap_memberInfor {
+    width: 940px;
+    height: 316px;
+    margin: 0 auto;
+    margin-top: 78px;
+    margin-bottom: 91px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.wrap_title {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.wrap_title p {
+    font-size: 20px;
+    margin: 0px;
+    margin-left: 132px;
+    margin-bottom: 5px;
+}
+
+.wrap_infor {
+    margin-top: 10px;
+    margin-left: 221px;
+}
+
+.wrap_infor p {
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 5px;
+    color: #868686;
+}
+
+.infor_modify {
+    float: right;
+    margin-top: 183px;
+    width: 104px;
+    height: 33px;
+    background-color: #0029BA;
+    border: none;
+    border-radius: 10px;
+}
+
+.infor_modify a {
+    color: white;
+}
+
+
 /********** footer **********/
 
 footer {
