@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRS</title>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fe66068d41.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/signUp.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        a:link,
+        a:visited {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="wrap_logo">
+            <a href="#"><img src="/img/logo.png" alt=""></a>
+        </div>
+    </nav>
+    <main>
+        <form method="post" action="서버url" id="signUp_form">
+            <div class="wrap_main1">
+            <div><img src="/img/user.png" alt=""></i><input type="text" name="id" placeholder="ID" ></div>
+            <div><img src="/img/lock.png" alt=""><input type="text" name="pw" placeholder="PW"></div>
+            <div><img src="/img/email.png" alt=""></i><input type="text" name="email" placeholder="아이디,비밀번호 분실시 확인용 이메일"></div>    
+            </div>
+            <div class="wrap_main2">
+            <div><img src="/img/user.png" alt=""><input type="text" name="name" placeholder="이름"></div>    
+            <div><img src="/img/emoji.png" alt=""><input type="text" name="nickname" placeholder="닉네임"></div>   
+            <div><img src="/img/cd.png" alt=""><input type="text" name="bd" placeholder="생년월일 여덟자리"></div>   
+            <div><img src="/img/check.png" alt=""><input type="text" name="bd" placeholder="[필수] 인증약관동의"></div>   
+            </div>
+        </form> 
+    </main>
+    <footer>
+        <button class="signUp_btn"><b>가입하기</b></button>
+    </footer>
+</body>
+
+</html>

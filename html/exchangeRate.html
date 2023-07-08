@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/fe66068d41.js" crossorigin="anonymous"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="./exchangeRate.css">
+    <link rel="stylesheet" href="/css/exchangeRate.css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,9 +60,7 @@
             <section class="nav_er">
                 <select name="country" id="country1">
                     <option value="ko">대한민국</option>
-                    <option value="jp">일본</option>
-                    <option value="cn">중국</option>
-                    <!--후에 나라코드와 연결-->
+                    <!--대한민국고정-->
                 </select>
                 <select name="country2" id="country2">
                     <option value="ko">대한민국</option>
@@ -82,12 +80,14 @@
             </section>
             <section class="main_er">
                 <div class="money1">
-                <input type="number" name="money1">
-                <!--화폐단위 구현-->
+                    <input type="number" name="money1">
+                    <p>₩</p>
+                    <!--화폐단위 구현-->
                 </div>
                 <p><b>=</b></p>
                 <div class="money2">
                 <input type="number" name="money2">
+                <p>$</p>
                 <!--화폐단위 구현-->
                 </div>
 
@@ -95,8 +95,19 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 LIKELION 3팀. ALL rights reserved.</p>
+        <div class="wrap_company">
+            <p style="font-size: 22px; margin-bottom: 12px;">COMPANY</p>
+            <p style="font-size: 14px; margin-bottom: 5px;">(주)어쩌고</p>
+            <p style="font-size: 14px;">사업자번호 : 123-45-67890</p>
+        </div>
+        <div class="wrap_contact">
+            <p style="font-size: 22px; margin-bottom: 12px;">CONTACT</p>
+            <p style="font-size: 14px; margin-bottom: 5px;">고객센터 : 02-000-000</p>
+            <p style="font-size: 14px; margin-bottom: 5px;">-오전 10시 ~ 오후 6시까지 운영</p>
+            <p style="font-size: 14px;">-주말 및 공휴일, 점심시간(12:00~13:00) 제외</p>
+        </div>
     </footer>
+
 </body>
 
 </html>
