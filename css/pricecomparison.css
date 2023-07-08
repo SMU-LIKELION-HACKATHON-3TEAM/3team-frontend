@@ -189,7 +189,9 @@ ul.login-bar>li:hover {
     height: 164px;
 }
 
-#country1 {
+.country1,
+.country2,
+.country3 {
     width: 368px;
     height: 66px;
     border-radius: 10px;
@@ -199,7 +201,9 @@ ul.login-bar>li:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.10);
 }
 
-#area1 {
+.division1,
+.division2,
+.division3 {
     width: 368px;
     height: 66px;
     border-radius: 10px;
@@ -210,8 +214,12 @@ ul.login-bar>li:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10), 0 3px 6px rgba(0, 0, 0, 0.10);
 }
 
-#country1,
-#area1:focus {
+.country1,
+.country2,
+.country3,
+.division1,
+.division2,
+.division3:focus {
     outline: none;
 }
 

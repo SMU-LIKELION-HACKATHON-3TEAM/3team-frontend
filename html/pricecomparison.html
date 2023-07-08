@@ -34,14 +34,14 @@
 <body>
     <nav>
         <div class="wrap_logo">
-            <a href="#"><img src="/img/logo.png" alt=""></a>
+            <a href="/html/mainpage.html"><img src="/img/logo.png" alt=""></a>
         </div>
         <div class="wrap_menu">
             <ul class="menu">
                 <li>
-                    <a href="#" class="a-community">커뮤니티</a></li>
+                    <a href="/html/community.html" class="a-community">커뮤니티</a></li>
                 <li>
-                    <a href="#" class="a-exchange">환율</a></li>
+                    <a href="/html/exchangeRate.html" class="a-exchange">환율</a></li>
                 <li class="menu-price">
                     <a href="#" class="a-price">가격비교</a></li>
                 <li class="menu-customer">
@@ -51,9 +51,9 @@
         <div class="wrap_login-bar">
             <ul class="login-bar">
                 <li>
-                    <a href="#">로그인</a></li>
+                    <a href="/html/login.html">로그인</a></li>
                 <li>
-                    <a href="#">회원가입</a></li>
+                    <a href="/html/signUp.html">회원가입</a></li>
             </ul>
         </div>
         <div class="wrap_search">
@@ -73,11 +73,11 @@
                     <p>나라 1</p>
                 </div>
                 <div class="select_area">
-                    <select name="country1" id="country1">
+                    <select class="country1" name="country1">
                         <option disabled selected >나라를 선택해주세요.</option>
                         <option value="KO">대한민국</option>
                     </select>
-                    <select name="area1" id="area1">
+                    <select class="division1" name="division1">
                         <option disabled selected>지역을 선택해주세요.</option>
                         <option value="SEOUL">서울</option>
                    </select>
@@ -89,11 +89,11 @@
                     <p>나라 2</p>
                 </div>
                 <div class="select_area">
-                    <select name="country1" id="country1">
+                    <select class="country2" name="country2">
                         <option disabled selected >나라를 선택해주세요.</option>
                          <option value="KO">대한민국</option>
                     </select>
-                    <select name="area1" id="area1">
+                    <select class="division2" name="division2">
                         <option disabled selected>지역을 선택해주세요.</option>
                         <option value="SEOUL">서울</option>
                    </select>
@@ -105,11 +105,11 @@
                     <p>나라 3</p>
                 </div>
                 <div class="select_area">
-                    <select name="country1" id="country1">
+                    <select class="country3" name="country1">
                         <option disabled selected >나라를 선택해주세요.</option>
                          <option value="KO">대한민국</option>
                     </select>
-                    <select name="area1" id="area1"> <option disabled selected>지역을 선택해주세요.</option>
+                    <select class="division3" name="division3"> <option disabled selected>지역을 선택해주세요.</option>
                         <option value="SEOUL">서울</option>
                    </select>
                 </div>
@@ -145,6 +145,7 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="/js/pricecomparison.js"></script>
 
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js"></script>
