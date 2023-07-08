@@ -166,27 +166,39 @@ select{
     margin-right: 29px;
     margin-left: 58px;
 }
-input{
-    width: 309px;
-    height:133px;
+.main_er > p{
+    font-size: 70px;
+}
+.money1>p, .money2>p{
+    font-size: 41px;
+    display:table;
+}
+.main_er input{
+    width: 220px;
+    height:132px;
+    border:none;
+    font-size: 43px;
+    margin-left:30px;
+    background-color: #ebebeb;
+}
+.money1, .money2{
+    display: flex;
+    width: 300px;
+    height:132px;
     border-radius:10px;
     background-color: #ebebeb;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border:none;
     font-size: 28px;
-    font-style: bold;
     margin-right: 30px;
     margin-left:30px;
-}
-.main_er > p{
-    font-size: 70px;
-    
-
+    justify-items: right;
 }
 
 /********** footer **********/
 
 footer {
+    position: relative;
     width: 1513px;
     height: 163px;
     background-color: #393939;
@@ -195,7 +207,21 @@ footer {
 }
 
 footer p {
-    text-align: center;
-    margin-top: 70px;
+    margin: 0px;
     color: white;
+}
+
+.wrap_company {
+    position: absolute;
+    width: 200px;
+    height: 79px;
+    margin-left: 57px;
+    margin-top: 21px;
+}
+
+.wrap_contact {
+    width: 300px;
+    height: 102px;
+    margin-left: 328px;
+    margin-top: 21px;
 }
