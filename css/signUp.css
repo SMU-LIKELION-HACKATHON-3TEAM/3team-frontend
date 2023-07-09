@@ -61,7 +61,16 @@ main,footer {
 .main_box input{
     border-bottom: none;
 }
-.main_bottom input{
+
+.main_bottom1 input{
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.main_bottom2{
+    box-sizing: border-box;
+    width: 539px;
+    height: 60px;
+    border: 1px solid #cccccc;
     border-bottom-right-radius:10px;
     border-bottom-left-radius:10px;
 }
@@ -74,7 +83,6 @@ input {
     font-size:20px ;
 }
 
-
 #signUp_form input:focus {
     outline: none;
 }
@@ -83,7 +91,7 @@ input::placeholder {
     font-size: 20px;
     vertical-align: middle;
 }
-
+/*main img*/
 #signUp_form img {
     position: absolute;
     width: 28px;
@@ -91,9 +99,31 @@ input::placeholder {
     margin-left: 12px;
     margin-top: 17px;
 }
+/*check box*/
+
+.main_bottom2 input{
+    position: absolute;
+    width: 28px;
+    height: 32px;
+    margin-left: 12px;
+    margin-top: -28px;
+
+}
+.check_label{
+    display:flex;
+    padding-left:50px;
+    padding-top:13px;
+    position: relative;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: bold;
+}
+span{
+    color:#0029BA;
+}
 
 .signUp_btn {
-    width: 487px;
+    width: 537px;
     height: 66px;
     border-radius: 10px;
     background-color: #0029BA;
