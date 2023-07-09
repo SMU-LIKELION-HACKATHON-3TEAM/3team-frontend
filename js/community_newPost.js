@@ -4,13 +4,13 @@ function getImageFiles(e) {
     const imagePreview = document.querySelector(".image-preview");
     const docFrag = new DocumentFragment();
   
-    if (imagePreview.childElementCount >= 2) {
-        alert("이미지는 최대 2개 까지 업로드가 가능합니다.");
+    if (imagePreview.childElementCount >= 1) {
+        alert("이미지는 최대 1개 까지 업로드가 가능합니다.");
         return;
       }
 
-    if ([...files].length >= 3) {
-      alert("이미지는 최대 2개 까지 업로드가 가능합니다.");
+    if ([...files].length >= 2) {
+      alert("이미지는 최대 1개 까지 업로드가 가능합니다.");
       return;
     }
   
@@ -22,7 +22,7 @@ function getImageFiles(e) {
       }
   
       // 파일 갯수 검사
-      if ([...files].length < 3) {
+      if ([...files].length < 2) {
         uploadFiles.push(file);
         const reader = new FileReader();
         reader.onload = (e) => {
@@ -81,4 +81,24 @@ function getImageFiles(e) {
       },
     });
   });
-  
+
+
+
+
+    // 네비바 이동
+    $('.a-community').click(function() {
+      var url = 'http://127.0.0.1:5500/html/community.html';
+      window.location.href = url;
+  });
+    $('.a-exchange').click(function() {
+      var url = 'http://127.0.0.1:5500/html/exchangeRate.html';
+      window.location.href = url;
+  });
+    $('.a-price').click(function() {
+      var url = 'http://127.0.0.1:5500/html/pricecomparison.html';
+      window.location.href = url;
+  });
+    $('.a-customer').click(function() {
+      var url = 'http://127.0.0.1:5500/html/고객지원.html';
+      window.location.href = url;
+  });
