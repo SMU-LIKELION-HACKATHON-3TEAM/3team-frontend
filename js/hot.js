@@ -8,8 +8,9 @@ $.getJSON("../json/hot-data.json", function(data) {
         var $created_at = $('<div>').addClass('created_at').text(item.created_at);
         var $views = $('<div>').addClass('like').text(item.views);
         var $like = $('<div>').addClass('like').text(item.like);
+        var $likes_image = $('<div>').addClass('likes_image');
 
-        $('#wrap-hot-writes').append($title).append($contents).append($like)
+        $('#wrap-hot-writes').append($title).append($contents).append($like).append($likes_image)
 
     })
 

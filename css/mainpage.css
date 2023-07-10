@@ -134,9 +134,18 @@
 
 .like {
     display: flex;
-    margin-left: 600px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    float: right;
 }
 
+.likes_image{
+    background-image: url(../img/🦆\ icon\ _heart_.png);
+    width: 24px;
+    height: 18px;
+    margin-left: 570px;
+    background-repeat: no-repeat;
+}
 /* 오늘 환율 */
 
 .wrap-monrate {
