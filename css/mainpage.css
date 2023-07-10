@@ -157,6 +157,20 @@
     margin:20px;
 }
 
+#today-exchangeRate {
+    width: 300px;
+    height: 600px;
+}
+
+.countryName {
+    text-align: left;
+}
+
+.exchangeRate {
+    text-align: right;
+}
+
+
 /* nav */
 nav {
     position: relative;
