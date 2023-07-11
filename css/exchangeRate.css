@@ -154,6 +154,12 @@ main{
     justify-items: center;
     align-items: center;
 }
+.nav_er{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
 select{
     width:309px;
     height:75px;
@@ -177,7 +183,7 @@ select{
     width: 220px;
     height:132px;
     border:none;
-    font-size: 43px;
+    font-size: 35px;
     margin-left:30px;
     background-color: #ebebeb;
 }

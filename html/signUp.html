@@ -8,7 +8,7 @@
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/fe66068d41.js" crossorigin="anonymous"></script>
-    
+
     <!-- css -->
     <link rel="stylesheet" href="/css/signUp.css">
 
@@ -31,26 +31,29 @@
         </div>
     </nav>
     <main>
-        <form method="post" action="서버url" id="signUp_form">
+        <form method="post" action="api/user/signUp" id="signUp_form">
             <div class="wrap_main1">
-            <div class="main_top"><img src="/img/user.png" alt=""><input type="text" name="id" id="id" placeholder="ID" ></div>
-            <div class="main_box"><img src="/img/lock.png" alt=""><input type="text" name="pw" id="pw"placeholder="PW"></div>
+            <div class="main_top"><img src="/img/user.png" alt=""><input type="text" name="userId" id="userId" placeholder="ID" ></div>
+            <div class="main_box"><img src="/img/lock.png" alt=""><input type="text" name="password" id="password"placeholder="PW"></div>
             <div class="main_bottom1"><img src="/img/email.png" alt=""><input type="text" name="email" id="email" placeholder="아이디,비밀번호 분실시 확인용 이메일"></div>    
             </div>
             <div class="wrap_main2">
-            <div class="main_top"><img src="/img/user.png" alt=""><input type="text" name="name" id="name"placeholder="이름"></div>    
-            <div class="main_box"><img src="/img/emoji.png" alt=""><input type="text" name="nickname" id="nickname" placeholder="닉네임"></div>   
-            <div class="main_box"><img src="/img/cd.png" alt=""><input type="text" name="bd" id="bd"placeholder="생년월일 여덟자리"></div>   
+            <div class="main_top"><img src="/img/user.png" alt=""><input type="text" name="userName" id="userName"placeholder="이름"></div>    
+            <div class="main_box"><img src="/img/emoji.png" alt=""><input type="text" name="nickName" id="nickName" placeholder="닉네임"></div>   
+            <div class="main_box"><img src="/img/cd.png" alt=""><input type="text" name="birthDay" id="birthDay"placeholder="생년월일 여덟자리"></div>   
             <div class="main_bottom2">
                 <label for="check" class="check_label"><span>[필수]</span>인증약관 전체동의</label>
                 <input type="checkbox" name="check" id="check" />
             </div>   
             </div>
-        </form> 
+            <div class="wrap_main1">
+                <button class="signUp_btn" onclick="onSubmitSignup_cbv();"><b>가입하기</b></button>
+                <input id = "signUp_submit" type = "submit" style = "display:none">
+            </div>
+        </form>
     </main>
-    <footer>
-        <button class="signUp_btn"><b>가입하기</b></button>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/js/signUp.js"></script>
 </body>
 
 </html>

@@ -58,38 +58,33 @@
     <main>
         <div class="wrap_er">
             <section class="nav_er">
-                <select name="country" id="country1">
+                <select name="country1" id="country1">
                     <option value="ko">대한민국</option>
                     <!--대한민국고정-->
                 </select>
-                <select name="country2" id="country2">
+                <form class="wrap_country" action="http://grishare.ap-northeast-2.elasticbeanstalk.com/api/exchangeRate/country"  method="get">
+                <select name="country2" id="country2" >
                     <option disabled selected >비교할 나라 선택</option>
-                    <option value="ko">대한민국</option>
-                    <option value="jp">일본</option>
-                    <option value="cn">중국</option>
-                    <!--후에 나라코드와 연결-->
                 </select>
+                <!-- <input id = "country_submit" type = "submit" style = "display:none"> -->
+                </form>
+                <form class="wrap_bank" action="http://grishare.ap-northeast-2.elasticbeanstalk.com/api/exchangeRate/bank" method="get">
                 <select name="banks" id="banks">
                     <option disabled selected >은행 선택</option>
-                    <option value="eca">한국수출은행</option>
-                    <option value="nh">농협</option>
-                    <option value="sh">신한</option>
-                    <option value="kr">한국은행</option>
-                    <option value="ha">하나</option>
-                    <option value="kb">국민</option>
-                    <!--후에 나라코드와 연결-->
                 </select>
+                <!-- <input id = "bank_submit" type = "submit" style = "display:none"> -->
+                </form>
             </section>
             <section class="main_er">
                 <div class="money1">
-                    <input type="number" name="money1">
+                    <input type="number" id="money1" onkeyup="calculate()">
                     <p>₩</p>
                     <!--화폐단위 구현-->
                 </div>
                 <p><b>=</b></p>
                 <div class="money2">
-                <input type="number" name="money2">
-                <p>$</p>
+                <input type="number" id="money2"></input>
+                <!-- <p>EUR</p> -->
                 <!--화폐단위 구현-->
                 </div>
 
@@ -109,7 +104,8 @@
             <p style="font-size: 14px;">-주말 및 공휴일, 점심시간(12:00~13:00) 제외</p>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/js/exchangeRate.js"></script>
 </body>
 
 </html>

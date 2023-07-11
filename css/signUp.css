@@ -33,12 +33,12 @@ nav {
 }
 
 /*main*/
-main,footer {
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1513px;
-    height: 550px;
+    height: 600px;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
@@ -123,7 +123,7 @@ span{
 }
 
 .signUp_btn {
-    width: 537px;
+    width: 487px;
     height: 66px;
     border-radius: 10px;
     background-color: #0029BA;
@@ -131,6 +131,6 @@ span{
     font-size: 24px;
     color: white;
     border: none;
-    /* margin: 10px; */
+    margin-top:30px;
     padding: 10px;
 }

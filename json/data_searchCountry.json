@@ -7,8 +7,7 @@
     "views" : "65",
     "like" : "4",
     "comment" : "15",
-    "file1" :"image1",
-    "file2" :"image2"
+    "file1" :"image1"
     },
     {
     "postId" : "24",
@@ -30,6 +29,5 @@
     "views" : "79",
     "like" : "35",
     "comment" : "19",
-    "file1" :"image3",
-    "file2" :"image4"
+    "file1" :"image4"
     }]
