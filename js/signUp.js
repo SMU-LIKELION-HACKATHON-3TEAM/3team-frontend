@@ -15,27 +15,27 @@ function getCookie(name) {
 
 function onSubmitSignup(){
     var userId = $('#userId').val();
-    var userPw = $("#userPw").val();
+    var password = $("#password").val();
     var email = $("email").val();
-    var name = $("name").val();
-    var nickname = $("nickname").val();
-    var bd = $("bd").val();
+    var userName = $("userName").val();
+    var nickName = $("nickName").val();
+    var birthDay = $("birthDay").val();
     $.ajax({
         type: 'POST',
         url: 'http://grishare.ap-northeast-2.elasticbeanstalk.com/api/user/register',
         data: JSON.stringify({
           "userId":userId,
-          "userPw":userPw,
+          "password":password,
           "email":email,
-          "name":name,
-          "nickname":nickname,
-          "bd":bd,
+          "userName":userName,
+          "nickName":nickName,
+          "birthDay":birthDay,
         }),
         success : function(data){
-          window.location.href='/html/mainpage.html'
+          
         },
         error: function(request, status, error){
-          alert("회원가입 실패:",error);
+          alert("잘못된 요청입니다.",error);
         }
     })
 }
