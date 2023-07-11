@@ -31,10 +31,11 @@
     </nav>
     <main>
         <div class="main">
-            <form class="wrap_login">
-                <div class="id"><input type="text" name="ID" placeholder="ID ㅣ"></div>
-                <div class="pw"><input type="text" name="PW" placeholder="PW ㅣ"></div>
-                <button class="login_btn">로그인</button>
+            <form class="wrap_login" action="http://grishare.ap-northeast-2.elasticbeanstalk.com/api/user/login" method="post">
+                <div class="id"><input type="text" name="userId" id="userId" placeholder="ID ㅣ"></div>
+                <div class="pw"><input type="text" name="userPw" id="userPw" placeholder="PW ㅣ"></div>
+                <button class="login_btn" onclick="onSubmitLogin_cbv()">로그인</button>
+                <input id = "login_submit" type = "submit" style = "display:none">
             </form>
         </div>
     </main>
@@ -50,5 +51,7 @@
                 <a href="/html/signUp.html">회원가입</a></li>  
         </ul>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/js/login.js"></script>
 </body>
 </html>

@@ -154,6 +154,12 @@ main{
     justify-items: center;
     align-items: center;
 }
+.nav_er{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
 select{
     width:309px;
     height:75px;

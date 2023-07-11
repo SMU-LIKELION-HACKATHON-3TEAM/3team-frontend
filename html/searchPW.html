@@ -32,7 +32,7 @@
         </div>
     </nav>
     <main>
-        <form method="post" action="서버url" id="searchPW_form">
+        <form method="post" action="http://grishare.ap-northeast-2.elasticbeanstalk.com/api/user/findPw" id="searchPW_form">
             <div class="wrap_main1">
                 <i class="fa-regular fa-user" id="user_icon"></i><input type="text" name="id" placeholder="아이디를 입력해주세요.">
                 <i class="fa-regular fa-envelope" id="email_icon"></i><input type="text" name="email" placeholder="이메일을 입력해주세요.">
@@ -40,7 +40,8 @@
             </div>
 
             <div class="wrap_main2">
-                <button class="searchPW_btn">비밀번호 찾기</button>
+                <button class="searchPW_btn" onclick="onSubmitsearchPw_cbv()">비밀번호 찾기</button>
+                <input id = "searchPW_submit" type = "submit" style = "display:none">
                 <div class="goID">
                     <p>아이디가 기억나지 않는다면?</p>
                     <a href="/html/searchID.html"><b>아이디 찾기</b></a>
@@ -48,6 +49,8 @@
             </div>
         </form> 
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/js/searchPW.js"></script>
 </body>
 
 </html>

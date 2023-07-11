@@ -28,6 +28,13 @@ a:visited {
     color: black;
 }
 
+.loginBtn:link,
+.signupBtn:link,
+.loginBtn:visited,
+.signupBtn:visited {
+    color: black;
+}
+
 .interestConutry_modify a:link,
 .review_modify a:link,
 .clipping_modify a:link,

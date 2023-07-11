@@ -3,13 +3,17 @@
     text-align: center;
 }
 
+body {
+    margin: 0;
+}
+
 .wrap-whole {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     text-align: center;
-    position: relative;
     z-index: 1;
   }
+
 .wrap-whole::after {
     width: 100%;
     height: 100vh;
@@ -30,16 +34,18 @@
     text-decoration-line: underline ;
     text-decoration-thickness:  4px;
     font-size: 80px;
+    color: white;
 }
 
 .sub-title {
     font-size: 24px;
+    color: white;
 }
 
 /* button */
 
 .wrap-button {
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .button {
