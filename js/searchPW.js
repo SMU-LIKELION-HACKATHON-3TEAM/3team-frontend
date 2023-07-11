@@ -1,28 +1,18 @@
-function getCookie(name) {
-    var cookieValue = null;
-    if (document.cookie && document.cookie !== '') {
-      var cookies = document.cookie.split(';');
-      for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i].trim();
-        if (cookie.substring(0, name.length + 1) === (name + '=')) {
-          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-          break;
-        }
-      }
-    }
-    return cookieValue;
-  }
-  
+
   
   function onSubmitsearchPw(){
-    var userId = $('#userId').val();
+    // var userLoginId = $('#userId').val();
     var email =$('#email').val();
+    if(email.trim()==""){
+      alert("입력되지 않은 항목 존재");
+      return false;
+    }
     $.ajax({
         type: 'POST',
         url: 'http://grishare.ap-northeast-2.elasticbeanstalk.com/api/user/findPw',
         contentType: 'application/json',
         data: JSON.stringify({
-          'userId':userId,
+          // 'userId':userId,
           'email':email,
         }),
         success : function(data){
@@ -30,12 +20,7 @@ function getCookie(name) {
         },
         error: function(request, status, error){
           console.error(error);
-          alert("아이디 혹은 이메일 오류");
+          alert("이메일 오류");
         }
     })
-  }
-  
-  function onSubmitsearchPw_cbv(){
-    $("#searchPw_submit").trigger("click")
-    onSubmitsearchPw();
   }

@@ -31,11 +31,11 @@
         </div>
     </nav>
     <main>
-        <form method="post" action="api/user/signUp" id="signUp_form">
+        <div id="signUp_form">
             <div class="wrap_main1">
             <div class="main_top"><img src="/img/user.png" alt=""><input type="text" name="userId" id="userId" placeholder="ID" ></div>
-            <div class="main_box"><img src="/img/lock.png" alt=""><input type="text" name="password" id="password"placeholder="PW"></div>
-            <div class="main_bottom1"><img src="/img/email.png" alt=""><input type="text" name="email" id="email" placeholder="아이디,비밀번호 분실시 확인용 이메일"></div>    
+            <div class="main_box"><img src="/img/lock.png" alt=""><input type="password" name="password" id="password"placeholder="PW" ></div>
+            <div class="main_bottom1"><img src="/img/email.png" alt=""><input type="email" name="email" id="email" placeholder="아이디,비밀번호 분실시 확인용 이메일"></div>    
             </div>
             <div class="wrap_main2">
             <div class="main_top"><img src="/img/user.png" alt=""><input type="text" name="userName" id="userName"placeholder="이름"></div>    
@@ -47,10 +47,9 @@
             </div>   
             </div>
             <div class="wrap_main1">
-                <button class="signUp_btn" onclick="onSubmitSignup_cbv();"><b>가입하기</b></button>
-                <input id = "signUp_submit" type = "submit" style = "display:none">
+                <button class="signUp_btn" onclick="onSubmitSignup();"><b>가입하기</b></button>
             </div>
-        </form>
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="/js/signUp.js"></script>
