@@ -39,26 +39,23 @@ $.getJSON("../json/er_bank.json", function (data) {
         showData();
     }
 });
-/*선택한 나라, 은행 값 보내줘야됌 */
 /*선택된 나라와 은행의 환율 받아와야함 */
-
-
-
 /*환율계산*/
-$.getJSON("../json/er.json", function (data) {
-    var select_country=$("country2").val();
-    var select_bank=$("bank").val();
-    /*선택된 나라와 은행의 환율 받아와야함 */
-    /*ajax get... */
-    let er=data.data.exchangeRate;
-    let result=0;
-    const showData=()=>{
-        var input_value=$("#money1").val();  
-        console.log(input_value);
-        result=input_value*er;
-        const result_money=document.getElementById('#money2');
-        $("#money2").val(result);
-        
+/*1000원 */
+function calculate(){
+    $.ajax({
+        //type:'GET',
+        //url: 'http://grishare.ap-northeast-2.elasticbeanstalk.com/api/exchangeRate?country-id=1?bank-id=ECA',
+    })
+    let input_value=document.getElementById("money1").value;
+    if(input_value.length>=4){
+        let output_value=input_value*9.14 //가져온 환율값
+        console.log(output_value);
+    
+        document.getElementById("money2").value=output_value;
     }
-    showData();
+    
+}
+$(input).on('keyup', function(e){
+    $(input).attr('size', $(input).val().length);
 });
