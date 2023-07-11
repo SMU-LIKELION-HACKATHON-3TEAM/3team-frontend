@@ -143,7 +143,7 @@ ul.login-bar>li:hover {
 
 footer {
     position: relative;
-    width: 1514px;
+    width: 1513px;
     height: 163px;
     background-color: #393939;
     margin: 0 auto;
@@ -359,6 +359,7 @@ i.fas.fa-pen {
     height:80px;
     border: none;
     resize:none;
+    word-break:break-all;
   }
   
   .file_only{
@@ -381,13 +382,12 @@ i.fas.fa-pen {
   }
 
   .likes_image{
-    background-image: url(../img/🦆\ icon\ _heart_.png);
+    position:absolute;
     width:24px;
     height:18px;
-    margin-top:-20px;
+    margin-top:-17px;
     margin-left:10px;
     cursor: pointer;
-
   }
   
   .comment{
@@ -415,9 +415,11 @@ i.fas.fa-pen {
     margin-top:-22px;
     margin-left:150px;
     cursor: pointer;
+    width:fit-content;
   }
+
   .scrap_image{
-    background-image: url(../img/🦆\ icon\ _star\ outline_.png);
+    position: absolute;
     width:23px;
     height:19px;
     margin-top:-19px;
@@ -432,6 +434,8 @@ i.fas.fa-pen {
     margin-top:-20px;
     margin-left:242px;
     cursor: pointer;
+    width:fit-content;
+    
   }
 
   .share_image{
@@ -446,12 +450,14 @@ i.fas.fa-pen {
   }
 
   .report {
-    text-align: right;
     color: red;
     font-size:14px;
     margin-top:-22px;
     margin-right:20px;
     cursor: pointer;
+    width:fit-content;
+    height:10px;
+    float:right;
   }
 
   .a-community{
@@ -483,23 +489,148 @@ i.fas.fa-pen {
     height:50px;
   }
 
-  .report_click{
+  .report_click{ 
     position:absolute;
     width:70px;
     height:20px;
     border:1px solid;
     border-radius: 5px;
     margin-top:5px;
-    margin-left:810px;
     font-size:10px;
     padding-top:2.5px;
     text-align: center;
     color:black;
   }
 
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    z-index: 9999;
+    opacity: 0.2;
+    pointer-events: none;
+  }
 
-#wrap_community_box{
-    cursor: pointer;
+
+.comment_post{
+  width:100px;
+  height:50px;
+  background-color: blue;
 }
 
-/* text-area 문제 + 좋아요 + 새로운 창 + 배너 + 분 + button 으로 변경 */
+.share_link{
+  margin-left:50px;
+  width:300px;
+  height:50px;
+  border:2px solid;
+  border-radius: 50px;
+  margin-top:10px;
+}
+
+.share_click{
+  background-color: white;
+  position:absolute;
+  width:405px;
+  height:150px;
+  border-radius: 20px;
+  margin-left:-30px;
+  margin-top:-130px;
+  border:2px solid;
+  display:flex;
+  
+}
+
+.share_emoji_box{
+  position:absolute;
+  margin-left:20px;
+  display:flex;
+  width:300px;
+  justify-content: space-between;
+  margin-top:-40px;
+}
+
+.share_emoji_box > img{
+  width:40px;
+  height:40px;
+}
+
+.share_copy{
+  margin-top:12px;
+  background-color:#0029BA;
+  width:46px;
+  height:24px;
+  float:right;
+  border-radius: 50px;
+  margin-right:10px;
+  text-align: center;
+  color:white;
+
+}
+
+.Vector{
+  background-color: #B3B3B3;
+  width:50px;
+  height:50px;
+}
+
+#wrap_community_box{
+  cursor: pointer;
+}
+
+
+
+#wrap_country_banner{
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  width: 880px;
+  height:250px;
+  margin: 20px;
+  margin-top: 45px;
+  padding: 10px;
+  border-bottom: 1px solid;
+  border-color:#B3B3B3;
+}
+
+#country_banner_box{
+  display: flex;
+  justify-content: space-between; 
+}
+
+#country_image{
+  background-color: blue;
+  width:202px;
+  height:134px;
+}
+
+#country_explain{
+  margin-left:20px;
+  margin-top:10px;
+  background-color: green;
+  width:711px;
+  height:119px;
+}
+
+#country_good_img{
+  width:30px;
+  height:30px;
+}
+
+.comment_box{
+
+}
+
+.comment_post{
+
+}
+
+.comment_userbox{
+
+}
+
+
+/* text-area 문제  + 드롭다운 (피그마 나오면) + search_community나라 배너 (API 나오면) + reply ajax로 수정*/
+
