@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/mainpage.css">
+   
 
     <style>
         a:link:not(.a-community),
@@ -34,13 +35,13 @@
         <div class="wrap_menu">
             <ul class="menu">
                 <li>
-                    <a href="#" class="a-community">커뮤니티</a>
+                    <a href="./community.html" class="a-community">커뮤니티</a>
                 </li>
                 <li>
-                    <a href="#" class="a-exchange">환율</a>
+                    <a href="./exchangeRate.html" class="a-exchange">환율</a>
                 </li>
                 <li class="menu-price">
-                    <a href="#" class="a-price">가격비교</a>
+                    <a href="./pricecomparison.html" class="a-price">가격비교</a>
                 </li>
                 <li class="menu-customer">
                     <a href="#" class="a-customer">고객지원</a>
@@ -50,10 +51,10 @@
         <div class="wrap_login-bar">
             <ul class="login-bar">
                 <li>
-                    <a href="#">로그인</a>
+                    <a href="./login.html">로그인</a>
                 </li>
                 <li>
-                    <a href="#">회원가입</a>
+                    <a href="./signUp.html">회원가입</a>
                 </li>
             </ul>
         </div>
@@ -79,7 +80,12 @@
     </div>
     <div class="wrap-infotorate">
         <div class="wrap-myinfo">
-            <h2>내 정보</h2>
+            <div class="wrap-myinfo-sub">
+                <h2>내 정보</h2>
+                <div class="my-whole-see">
+                    <a href="./mypage.html">전체보기</a>
+                </div>
+            </div>
             <div class="container-myinfo">
                 <div class="myinfo">
                     <img class="my-img" src="../img/user.png" style="width:86px;height:86px;">
@@ -89,7 +95,7 @@
                     <p>user1@gmail.com</p>
                     <p>자유로운 여행가</p>
                     <div>
-                        <button class="button-my" type="button">회원정보 수정</button>
+                        <button onclick="location.href='./mypageMod.html'" class="button-my" type="button">회원정보 수정</button>
                     </div>
                 </div>
             </div>
@@ -111,9 +117,14 @@
         </div>
         <div class="wrap-hot">
             <div class="hot">
-                <h2>HOT 게시물</h2>
+                <div class="wrap-hotsub">
+                    <h2>HOT 게시물</h2>
+                    <div class="hot-whole-see">
+                        <a href="./community.html">전체보기</a>
+                    </div>
+                </div>
                 <div class="collum">
-                    <h3>HOT 제목 1</h3>
+                    <div id="wrap-hot-writes"></div>
 
                 </div>
             </div>
@@ -121,12 +132,29 @@
         <div class="wrap-monrate">
             <div class="monrate">
                 <h2>오늘 환율</h2>
+                <div id="today-exchangeRate"></div>
             </div>
         </div>
     </div>
     <footer>
-        <p>&copy; 2023 LIKELION 3팀. ALL rights reserved.</p>
+        <div class="wrap_company">
+            <p style="font-size: 22px; margin-bottom: 12px;">COMPANY</p>
+            <p style="font-size: 14px; margin-bottom: 5px;">(주)어쩌고</p>
+            <p style="font-size: 14px;">사업자번호 : 123-45-67890</p>
+        </div>
+        <div class="wrap_contact">
+            <p style="font-size: 22px; margin-bottom: 12px;">CONTACT</p>
+            <p style="font-size: 14px; margin-bottom: 5px;">고객센터 : 02-000-000</p>
+            <p style="font-size: 14px; margin-bottom: 5px;">-오전 10시 ~ 오후 6시까지 운영</p>
+            <p style="font-size: 14px;">-주말 및 공휴일, 점심시간(12:00~13:00) 제외</p>
+        </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/hot.js"></script>
+    <script src="../js/changerate_nation.js"></script>
+
 </body>
 
 </html>

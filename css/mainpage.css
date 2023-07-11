@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 20px;
 }
 
 .map {
@@ -46,10 +47,21 @@
 .wrap-infotorate {
     margin: 20px 20px 20px 50px;
     display: flex;
+    padding-left: 20px;
 }
 
 .wrap-myinfo {
     width: 400px;
+}
+
+.wrap-myinfo-sub {
+    display: flex;
+    margin-top: 20px;
+}
+
+.my-whole-see {
+    margin-top: 20px;
+    padding-left: 200px;
 }
 
 .container-myinfo {
@@ -84,25 +96,80 @@
 
 /* 핫 게시물 */
 .wrap-hot {
-    margin: 20px;
-    border-left: thick solid #393939;
+    border-left: solid #393939;
     width: 650px;
+}
+
+.wrap-hotsub {
+    display: flex;
+}
+
+.hot-whole-see {
+    margin-top: 20px;
+    padding-left: 400px;
+    font-size: 15px;
 }
 
 .hot {
     margin: 20px;
 }
 
+#wrap-hot-writes {
+    width: 650px;
+    height: 600px;
+}
+
+.title {
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.contents {
+    margin: 10px;
+
+}
+
+
+
+.like {
+    display: flex;
+    margin-right: 35px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.likes_image{
+    background-image: url(../img/🦆\ icon\ _heart_.png);
+    width: 24px;
+    height: 18px;
+    margin-left: 570px;
+    background-repeat: no-repeat;
+}
 /* 오늘 환율 */
 
 .wrap-monrate {
     margin:20px;
-    border-left: thick solid #393939;
+    border-left: solid #393939;
 }
 
 .monrate {
     margin:20px;
 }
+
+#today-exchangeRate {
+    width: 300px;
+    height: 600px;
+}
+
+.countryName {
+    text-align: left;
+}
+
+.exchangeRate {
+    text-align: right;
+}
+
 
 /* nav */
 nav {
@@ -231,6 +298,7 @@ ul.login-bar>li:hover {
 /********** footer **********/
 
 footer {
+    position: relative;
     width: 1513px;
     height: 163px;
     background-color: #393939;
@@ -239,8 +307,23 @@ footer {
 }
 
 footer p {
-    text-align: center;
-    margin-top: 70px;
+    margin: 0px;
     color: white;
 }
+
+.wrap_company {
+    position: absolute;
+    width: 200px;
+    height: 79px;
+    margin-left: 57px;
+    margin-top: 21px;
+}
+
+.wrap_contact {
+    width: 300px;
+    height: 102px;
+    margin-left: 328px;
+    margin-top: 21px;
+}
+
 
