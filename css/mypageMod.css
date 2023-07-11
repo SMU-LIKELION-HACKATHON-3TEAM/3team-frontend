@@ -184,6 +184,10 @@ ul.login-bar>li:hover {
     overflow: hidden;
 }
 
+#picture_input {
+    opacity: 0;
+}
+
 .profile {
     position: absolute;
     width: 100px;
@@ -193,13 +197,13 @@ ul.login-bar>li:hover {
 
 .wrap_title {
     position: absolute;
+    margin-left: 132px;
     margin-top: 10px;
 }
 
 .wrap_title p {
     font-size: 20px;
     margin: 0px;
-    margin-left: 132px;
     margin-bottom: 5px;
 }
 
@@ -231,7 +235,7 @@ ul.login-bar>li:hover {
 
 .infor_modify {
     float: right;
-    margin-top: 178px;
+    margin-top: 92px;
     width: 104px;
     height: 33px;
     background-color: #0029BA;
