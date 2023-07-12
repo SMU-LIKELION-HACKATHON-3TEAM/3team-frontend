@@ -18,7 +18,8 @@ $.getJSON("../json/er_country.json", function (data) {
         showData();
     }
 });
-/*은행선택*/
+
+/*은행선택--->통신되면 ajax사용*/
 $.getJSON("../json/er_bank.json", function (data) {
     const length = data.data.banks.length;
     var i;
@@ -39,23 +40,91 @@ $.getJSON("../json/er_bank.json", function (data) {
         showData();
     }
 });
+
+/*********ajax**************/
+/*나라 선택*/
+// $.ajax({
+//     type:'GET',
+//     url: 'http://grishare.ap-northeast-2.elasticbeanstalk.com/api/exchangeRate/country',
+//     dataType:'json',
+//     success : function(data){
+//       console.log(data);
+//       $.each(data, function (index, item) {
+//         console.log(item.contryName)
+//         var $div = $("<option>").addClass("wrap");
+//         var $contryName = $("<div>")
+//           .addClass("contryName")
+//           .text(item.contryName);
+//         var $exchangeRate = $("<div>")
+//           .addClass("exchangeRate")
+//           .text(item.exchangeRate);
+//         $div.append($contryName).append($exchangeRate);
+//         $("#today-exchangeRate").append($div);
+//       });   
+//       },
+//       error: function(request, status, error){
+//         alert("잘못된 요청입니다.",error);
+//       }
+//   })
+
+/*은행 선택 */
+// $.ajax({
+//     type:'GET',
+//     // url: 'http://grishare.ap-northeast-2.elasticbeanstalk.com/api/exchangeRate/bank',
+//     success : function(data){
+//         console.log(data);
+//       },
+//       error: function(request, status, error){
+//         alert("잘못된 요청입니다.",error);
+//       }
+//   })
+// var countryName;
+// var bankId;
+// countryName=$("select[name=country2]").val();
+// bankId=$("#banks").val();
+
+
 /*선택된 나라와 은행의 환율 받아와야함 */
 /*환율계산*/
-/*1000원 */
+/*1000원 단위 */
+
+
 function calculate(){
-    $.ajax({
-        //type:'GET',
-        //url: 'http://grishare.ap-northeast-2.elasticbeanstalk.com/api/exchangeRate?country-id=1?bank-id=ECA',
-    })
-    let input_value=document.getElementById("money1").value;
+  let input_value=document.getElementById("money1").value;
     if(input_value.length>=4){
         let output_value=input_value*9.14 //가져온 환율값
         console.log(output_value);
     
         document.getElementById("money2").value=output_value;
     }
+
+    // $.ajax({
+    //     type: "GET",
+    //     url: `http://grishare.ap-northeast-2.elasticbeanstalk.com/api/exchangeRate?country-id=1?bank-id=ECA`,
+    //     contentType: "application/json",
+    //     success: function (data) {
+    //       console.log("환율 데이터 가져오기 성공");
+    //       console.log(data);
+    //       let input_value=document.getElementById("money1").value;
+    //       console.log(input_value);
+    //       let output_value=input_value*9.14 //가져온 환율값
+    //       console.log(output_value);
     
+    //       document.getElementById("money2").value=output_value;
+    //     },
+    //     error: function (request, status, error) {
+    //       alert(
+    //         "code:" +
+    //           request.status +
+    //           "\n" +
+    //           "message:" +
+    //           request.responseText +
+    //           "\n" +
+    //           "error:" +
+    //           error
+    //       );
+    //     },
+    //   });
 }
-$(input).on('keyup', function(e){
-    $(input).attr('size', $(input).val().length);
-});
+ 
+    
