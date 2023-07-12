@@ -12,7 +12,7 @@
 // });
 
 $.getJSON("../json/intnation.json", function(data) {
-    $.each(data , function(index, item){
+    $.each(data, function(index, item) {
 
         var $a = $("<a>").addClass("per-intnation");
 
@@ -24,11 +24,12 @@ $.getJSON("../json/intnation.json", function(data) {
 
         $a.attr("href", "../html/community_searchCountry.html");
 
+
         $a.click(function () {
             localStorage.setItem("countryCode", item.countryCode);
         });
 
-        
+
         $('#wrap-intnation').append($a);
 
     })
