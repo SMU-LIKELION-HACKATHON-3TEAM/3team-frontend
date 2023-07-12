@@ -19,10 +19,10 @@ $.getJSON(jsonLocation, function(data) {
 
         /* 이름 */
         var input_name = document.querySelector(".input_name");
-        input_name.setAttribute("value", userName)
+        input_name.innerHTML = userName;
 
         var input_email = document.querySelector(".input_email");
-        input_email.setAttribute("value", email)
+        input_email.innerHTML = email;
 
         var input_nickName = document.querySelector(".input_nick");
         input_nickName.setAttribute("value", nick)
@@ -38,7 +38,7 @@ $.getJSON(jsonLocation, function(data) {
     showData();
 });
 
-$('#picture').on('click', function() {
+$('#modify').on('click', function() {
     $('#picture_input').click();
 });
 
